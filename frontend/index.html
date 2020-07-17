@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de movimentação de contas</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="conta.nome">
+        <input type="numeric" v-model="conta.saldo">
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data:{
+                conta: {
+                    nome: "",
+                    saldo: 0
+                }
+            }
+        });
+    </script>
+</body>
+</html>
